@@ -19,7 +19,7 @@ mergeInto(LibraryManager.library,
                     var files = e.target.files;
 
                     if (files.length === 0) {
-                        ResetFileLoader();
+                        _ResetFileLoader();
                         return;
                     }
 
@@ -38,7 +38,7 @@ mergeInto(LibraryManager.library,
             var fileuploader = document.getElementById('fileuploader');
 
             if (fileuploader === null)
-                InitFileLoader(FileCallbackObjectName, FileCallbackMethodName);
+                _InitFileLoader(FileCallbackObjectName, FileCallbackMethodName);
 
             if (str !== null || str.match(/^ *$/) === null)
                 fileuploader.setAttribute('accept', str);
